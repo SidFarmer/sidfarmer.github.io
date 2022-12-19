@@ -1,0 +1,41 @@
+
+
+html, body {
+    background-color: hsl(232, 55%, 81%);
+}
+
+header, footer {
+    background-color: hsl(232, 77%, 68%);
+}
+
+header {
+    
+}
+
+.header-navigation a,
+.footer-navigation a {
+    text-decoration: none;
+}
+
+.header-navigation li,
+.footer-navigation li {
+    display: inline;
+    list-style-type: none;
+    text-transform: uppercase;
+    color: rgba(0, 0, 0, 100%);
+    font-size: 30px;
+}
+
+main {
+    position: relative;
+    top: 30px;
+    bottom: 500px;
+}
+
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+}
