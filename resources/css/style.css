@@ -133,10 +133,7 @@ main {
     text-decoration: underline;
     /* background-color: rgb(35, 84, 51); */
     color: #C5EEB7;
-    width:fit-content;
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
+padding-left: 12em;
 }
 
 .homepage-post p,
@@ -149,10 +146,7 @@ main {
 }
 
 .blog-post ul {
-    width:fit-content;
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
+padding-left: 12em;
 }
 
 .blog-post a {
