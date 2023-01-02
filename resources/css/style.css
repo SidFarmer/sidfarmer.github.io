@@ -2,8 +2,17 @@ html, body {
     background-color: #8EEB6F;
 }
 
-.header-nav h1 {
+/* Header & Footer Navigation */
+
+header, 
+.header-nav h1,
+.header-nav ul li,
+.header-socials ul li,
+.footer-nav ul li {
     display: inline-flex;
+}
+
+header h1 {
     background-color: #416B32;
     color: #C5EEB7;
     margin-left: 1em;
@@ -11,14 +20,17 @@ html, body {
     padding: 1em;
 }
 
-.header-nav nav {
-    display: inline-flex;
+header h1:hover {
+    background-color: #599c43;
 }
 
-.header-nav ul li {
-    display: inline-flex;
-    background-color: #599c43;
-    padding: 2em;
+header h1 a {
+    text-decoration: none;
+}
+
+header h1 a:visited {
+    color: #C5EEB7;
+
 }
 
 .header-nav a,
@@ -27,8 +39,12 @@ html, body {
     color: #C5EEB7;
 }
 
-.header-nav h1:hover {
+.header-nav ul li,
+.footer-nav ul li {
     background-color: #599c43;
+    padding: 2em;
+    margin-top: 1em;
+    margin-left: 1em;
 }
 
 .header-nav ul li:hover,
@@ -36,27 +52,19 @@ html, body {
     background-color: #67ac45;
 }
 
-.main-content {
-    padding: 2em;
+.header-socials ul li {
+    padding: 1em;
+    margin-top: 1em;
 }
 
-.main-content h2 {
-    background-color: rgb(62, 130, 83);
-    color: #C5EEB7;
-    padding: 1em;
+.header-socials img {
+    height: 40px;
+    width: 40px;
+    border-radius: 100%;
 }
 
-.main-content h3 {
-    background-color: rgb(35, 84, 51);
-    color: #C5EEB7;
-    padding: 1em;
-}
-
-.main-content p {
-    font-family: 'Courier New', Courier, monospace;
-    background-color: #1f2f2f;
-    color: greenyellow;
-    padding: 1em;
+.header-socials a:hover {
+    opacity: 80%;
 }
 
 .footer-nav {
@@ -64,10 +72,90 @@ html, body {
     font-size: 0.75em;
     color: #C5EEB7;
     padding: 0.5em 2em;
+    margin-right: 2.5em;
 }
 
 .footer-nav ul li {
     display: inline-flex;
     background-color: #599c43;
     padding: 1em;
+}
+
+/* Main */
+
+main {
+    padding: 2em;
+}
+
+.homepage-post,
+.portfolio-project,
+.blog-post,
+.about-me {
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #1f2f2f;
+    color: greenyellow;
+    padding: 1em;
+    margin-bottom: 1em;
+    font-size: 1.2em
+}
+
+.homepage-post h2,
+.portfolio-project h2,
+.blog-post h2,
+.about-me h2 {
+    /* background-color: rgb(62, 130, 83); */
+    color: #C5EEB7;
+    padding: 1em 3.5em;
+    width: 50%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.homepage-post h3,
+.portfolio-project h3,
+.blog-post h3,
+.about-me h3 {
+    text-decoration: underline;
+    /* background-color: rgb(35, 84, 51); */
+    color: #C5EEB7;
+    padding: 1em;
+    width:fit-content;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.homepage-post h4,
+.portfolio-project h4,
+.blog-post h4,
+.about-me h4 {
+    text-decoration: underline;
+    /* background-color: rgb(35, 84, 51); */
+    color: #C5EEB7;
+    width:fit-content;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.homepage-post p,
+.portfolio-project p,
+.blog-post p,
+.about-me p {
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #1f2f2f;
+    color: greenyellow;
+}
+
+.blog-post ul {
+    width:fit-content;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.blog-post a {
+    text-decoration: none;
+    color: greenyellow;
 }
